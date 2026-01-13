@@ -25,6 +25,14 @@
   color: #FF8367;
 }
 
+/* header style */
+header{
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #EFEFEF;
+  /* padding-bottom: 10px; */
+}
+
 /* navbar styles */
 .navbar{
   max-width: 1160px;
@@ -35,7 +43,7 @@ nav > ul{
   gap: 39px;
   justify-content: end;
   margin-right: 140px;
-  margin-top: 37px;
+  padding-top: 37px;
 }
 nav > ul > li{
   list-style: none;
@@ -47,7 +55,7 @@ nav > ul > li{
 .banner{
   max-width: 1160px;
   margin: 0 auto;
-  margin-bottom: 190px;
+  margin-bottom: 120px;
 }
  .banner-upper-container{
   display: flex;
@@ -72,8 +80,12 @@ nav > ul > li{
 .banner-btn1{
   padding: 18px 56px;
 }
-.banner-img img{
+.banner-img1 img{
   max-width: 470px;
+}
+.banner-img2 img{
+  max-width: 470px;
+  padding-bottom: 50px;
 }
 .banner-lower-container{
   display: flex;
@@ -143,13 +155,66 @@ nav > ul > li{
   color: #6C6C6C;
 }
 
+/* footer styles */
+footer{
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #EFEFEF;
+  padding-top: 100px;
+}
+.footer-upper{
+  background-color: blueviolet;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 85px 70px;
+  margin-bottom: 90px;
+}
+.footer-title{
+  font-weight: bold;
+  font-size: 4rem;
+  color: #FFFFFF;
+}
+.footer-btn{
+  padding: 18px 32px;
+}
+.footer-subtitle{
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #696871;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.footer-email{
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: #363958;
+  margin-bottom: 23px;
+  text-align: center;
+}
+.footer-img-container{
+  text-align: center;
+  padding-bottom: 81px;
+}
+.footer-img{
+  max-width: 40px;
+  margin-right: 27px;
+}
+
 @media screen and (max-width: 576px) {
+  /* header style */
+  header{
+    width: 100%;
+  }
+
   /* navbar styles */
   nav > ul{
     gap: 20px;
     margin: 0 auto;
     justify-content: center;
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 50px;
   }
 
@@ -163,18 +228,19 @@ nav > ul > li{
   .banner-title{
     margin-bottom: 10px;
   }
-  .banner-img img{
+  .banner-img1 img,
+  .banner-img2 img{
     width: 90%;
     margin-bottom: 20px;
     margin-left: 25px;
   }
   .banner-upper-container{
     flex-direction: column;
-    gap: 30px;
+    gap: 0px;
   }
   .banner-lower-container{
     flex-direction: column-reverse;
-    gap: 30px;
+    gap: 0px;
     justify-content: center;
   }
   .banner-about-container{
@@ -187,5 +253,19 @@ nav > ul > li{
   }
   .latest-card-container{
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* footer styles */
+  footer{
+    width: 100%;
+  }
+  .footer-upper{
+    width: 85%;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .footer-title{
+    font-size: 2rem;
   }
 }
