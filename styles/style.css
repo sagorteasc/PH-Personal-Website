@@ -21,6 +21,9 @@
   background-color: #F46060;
   font-weight: 500;
 }
+.special{
+  color: #FF8367;
+}
 
 /* navbar styles */
 .navbar{
@@ -61,9 +64,6 @@ nav > ul > li{
   color: #363958;
   margin-bottom: 18px;
 }
-.banner-special{
-  color: #FF8367;
-}
 .banner-description{
   color: #3E3E3E;
   margin-bottom: 36px;
@@ -102,6 +102,47 @@ nav > ul > li{
   padding: 18px 17px;
 }
 
+/* latest styles */
+.latest-container{
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 180px;
+}
+.latest-title{
+  font-weight: bold;
+  font-size: 3rem;
+  color: #363958;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.latest-card-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+.latest-card{
+  max-width: 370px;
+  border-radius: 20px;
+  background-color: #EFEFEF;
+  box-shadow: 0 7px 20px rgba(194, 73, 73, 0.07);
+  padding: 18px 18px;
+}
+.latest-card-img{
+   max-width: 340px;
+   margin-bottom: 25px;
+}
+.latest-card-title{
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #363958;
+  margin-bottom: 12px;
+}
+.latest-card-description{
+  line-height: 28px;
+  color: #6C6C6C;
+}
+
 @media screen and (max-width: 576px) {
   /* navbar styles */
   nav > ul{
@@ -138,5 +179,13 @@ nav > ul > li{
   }
   .banner-about-container{
     width: 80%;
+  }
+
+  /* latest styles */
+  .latest-container{
+    margin-bottom: 50px;
+  }
+  .latest-card-container{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
