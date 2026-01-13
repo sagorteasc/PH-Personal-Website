@@ -14,8 +14,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+.btn-primary{
+  color: white;
+  border-radius: 6px;
+  border: none;
+  background-color: #F46060;
+  font-weight: 500;
+}
 
 /* navbar styles */
+.navbar{
+  max-width: 1160px;
+  margin: 0 auto;
+}
 nav > ul{
   display: flex;
   gap: 39px;
@@ -29,6 +40,68 @@ nav > ul > li{
   color: #3C3C3C;
 }
 
+/* banner styles */
+.banner{
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 190px;
+}
+ .banner-upper-container{
+  display: flex;
+  gap: 230px;
+  align-items: center;
+  justify-content: center;
+ }
+.banner-heading{
+  max-width: 348px;
+}
+.banner-title{
+  font-weight: bold;
+  font-size: 5rem;
+  color: #363958;
+  margin-bottom: 18px;
+}
+.banner-special{
+  color: #FF8367;
+}
+.banner-description{
+  color: #3E3E3E;
+  margin-bottom: 36px;
+  line-height: 24px;
+}
+.banner-btn1{
+  padding: 18px 56px;
+}
+.banner-img img{
+  max-width: 470px;
+}
+.banner-lower-container{
+  display: flex;
+  gap: 230px;
+  align-items: center;
+  justify-content: center;
+}
+.banner-about-container{
+  max-width: 450px;
+}
+.banner-about{
+  font-weight: bold;
+  font-size: 3rem;
+  color: #363958;
+  margin-bottom: 37px;
+}
+.banner-about-description{
+  color: #3E3E3E;
+  line-height: 24px;
+  margin-bottom: 24px;
+  
+}
+.banner-btn2{
+  display: flex;
+  gap: 10px;
+  padding: 18px 17px;
+}
+
 @media screen and (max-width: 576px) {
   /* navbar styles */
   nav > ul{
@@ -36,5 +109,34 @@ nav > ul > li{
     margin: 0 auto;
     justify-content: center;
     margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  /* banner styles */
+  .banner{
+    margin-bottom: 50px;
+  }
+  .banner-heading{
+    width: 90%;
+  }
+  .banner-title{
+    margin-bottom: 10px;
+  }
+  .banner-img img{
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 25px;
+  }
+  .banner-upper-container{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .banner-lower-container{
+    flex-direction: column-reverse;
+    gap: 30px;
+    justify-content: center;
+  }
+  .banner-about-container{
+    width: 80%;
   }
 }
