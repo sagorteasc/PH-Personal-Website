@@ -1,0 +1,40 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto{
+  font-family: "Roboto", sans-serif;
+}
+.bebas-neue{
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* shared styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar styles */
+nav > ul{
+  display: flex;
+  gap: 39px;
+  justify-content: end;
+  margin-right: 140px;
+  margin-top: 37px;
+}
+nav > ul > li{
+  list-style: none;
+  font-weight: 500;
+  color: #3C3C3C;
+}
+
+@media screen and (max-width: 576px) {
+  /* navbar styles */
+  nav > ul{
+    gap: 20px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
